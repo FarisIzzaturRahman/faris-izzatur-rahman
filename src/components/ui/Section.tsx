@@ -12,7 +12,7 @@ const Section: React.FC<SectionProps> = ({ children, className, id }) => {
         <section
             id={id}
             className={cn(
-                "py-16 md:py-24 px-6 md:px-12 max-w-5xl mx-auto",
+                "py-12 md:py-24 px-6 md:px-12 max-w-5xl mx-auto",
                 className
             )}
         >

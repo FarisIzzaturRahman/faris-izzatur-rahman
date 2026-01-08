@@ -12,11 +12,11 @@ const Hero: React.FC = () => {
                 <div className="text-xs font-bold uppercase tracking-[0.4em] text-accent mb-8 opacity-70">
                     Faris Izzatur Rahman
                 </div>
-                <h1 className="text-4xl md:text-6xl font-semibold tracking-tight leading-tight text-foreground mb-6">
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight text-foreground mb-6">
                     Architecting solutions for <span className="text-accent underline decoration-accent/20 decoration-4 underline-offset-8">complex biological data</span>.
                 </h1>
 
-                <p className="text-xl md:text-2xl text-muted leading-relaxed max-w-2xl mb-10 font-normal">
+                <p className="text-lg md:text-xl lg:text-2xl text-muted leading-relaxed max-w-2xl mb-10 font-normal">
                     Bridging the gap between computer science and genomic science with rigor, precision, and mature problem-solving.
                 </p>
 

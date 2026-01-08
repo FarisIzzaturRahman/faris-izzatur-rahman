@@ -22,12 +22,12 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
             {/* Timeline Dot */}
             <div className={`absolute left-[-5px] top-1.5 w-2.5 h-2.5 rounded-full border-2 border-background ${isCurrent ? 'bg-accent' : 'bg-muted'}`} />
 
-            <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-1 mb-4">
+            <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-4">
                 <div>
-                    <h3 className="text-xl font-semibold tracking-tight text-foreground">{role}</h3>
-                    <div className="text-sm font-medium text-accent uppercase tracking-wider">{company} · {location}</div>
+                    <h3 className="text-xl font-semibold tracking-tight text-foreground leading-tight">{role}</h3>
+                    <div className="text-sm font-medium text-accent uppercase tracking-wider mt-1">{company} · {location}</div>
                 </div>
-                <span className="text-sm font-mono text-muted whitespace-nowrap">{period}</span>
+                <span className="text-sm font-mono text-muted/60">{period}</span>
             </div>
 
             <ul className="space-y-3">

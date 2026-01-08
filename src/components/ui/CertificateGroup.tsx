@@ -20,9 +20,9 @@ const CertificateGroup: React.FC<CertificateGroupProps> = ({ domain, certificate
             <div className="grid grid-cols-1 gap-6">
                 {certificates.map((cert, idx) => (
                     <div key={idx} className="flex flex-col gap-1">
-                        <div className="flex justify-between items-baseline gap-4">
-                            <span className="text-base font-medium text-foreground">{cert.name}</span>
-                            <span className="text-xs font-mono text-muted uppercase">{cert.issuer}</span>
+                        <div className="flex flex-col md:flex-row md:justify-between md:items-baseline gap-1 md:gap-4">
+                            <span className="text-base font-medium text-foreground leading-tight">{cert.name}</span>
+                            <span className="text-[10px] md:text-xs font-mono text-muted/60 uppercase tracking-wider">{cert.issuer}</span>
                         </div>
                         <p className="text-sm text-muted leading-relaxed italic">
                             — {cert.impact}

@@ -6,16 +6,13 @@ import ProjectCard from "@/components/ui/ProjectCard";
 import PublicationItem from "@/components/ui/PublicationItem";
 import CertificateGroup from "@/components/ui/CertificateGroup";
 import DynamicBackground from "@/components/DynamicBackground";
-import MethodologyCard from "@/components/ui/MethodologyCard";
 import ReadingItem from "@/components/ui/ReadingItem";
-import ThemeToggle from "@/components/ui/ThemeToggle";
 import ExperienceItem from "@/components/ui/ExperienceItem";
-import { ShieldCheck, Repeat, Search, Microscope, Briefcase } from "lucide-react";
+import { Microscope } from "lucide-react";
 
 export default function Home() {
   return (
     <div className="relative">
-      <ThemeToggle />
       <DynamicBackground />
 
       <Hero />

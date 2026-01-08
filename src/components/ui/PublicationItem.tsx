@@ -18,14 +18,14 @@ const PublicationItem: React.FC<PublicationItemProps> = ({
     return (
         <div className="py-8 border-b border-border last:border-0">
             <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-3">
-                <h3 className="text-lg font-medium text-foreground tracking-tight">
+                <h3 className="text-lg font-medium text-foreground tracking-tight leading-tight">
                     {link ? (
                         <a href={link} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors underline decoration-accent/10 underline-offset-4">
                             {title}
                         </a>
                     ) : title}
                 </h3>
-                <span className="text-sm font-mono text-muted whitespace-nowrap">
+                <span className="text-sm font-mono text-muted/60">
                     {journal} · {year}
                 </span>
             </div>
