@@ -29,12 +29,12 @@ export default function Home() {
 
       <Section id="summary" className="border-t border-border/50">
         <div className="max-w-4xl">
-          <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-8">Executive Summary</h2>
+          <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-8">Professional Summary</h2>
           <p className="text-2xl md:text-3xl font-medium tracking-tight text-foreground leading-tight">
-            Passionate and results-driven <span className="text-accent underline decoration-accent/20 underline-offset-8">Bioinformatician</span> with expertise in computer science, specializing in genomics and data science.
+            <span className="text-accent underline decoration-accent/20 underline-offset-8">Bioinformatician</span> with a background in computer science, focusing on genomic data analysis and workflow automation.
           </p>
           <p className="mt-8 text-lg text-foreground/70 leading-relaxed max-w-3xl">
-            Proficient in Python, R, Bash Scripting, and machine learning, I excel at transforming complex biological datasets into actionable insights. Committed to advancing bioinformatics, I leverage cutting-edge technologies to drive scientific discovery and innovation in genomic research.
+            Proficient in Python, R, Bash Scripting, and machine learning, I focus on analyzing biological datasets and extracting meaningful insights. Enthusiastic about applying computational tools to support research and clinical genomics.
           </p>
         </div>
       </Section>
@@ -75,7 +75,7 @@ export default function Home() {
       </Section>
 
       <Section id="projects">
-        <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-12 text-center">Domain-Specific Expertise (80+ Projects)</h2>
+        <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-12 text-center">Bioinformatics Experience (80+ Projects)</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {domainProjectsData.map((project, index) => (
             <ProjectCard
@@ -94,7 +94,7 @@ export default function Home() {
             <p className="text-sm text-muted mb-4 italic relative">
               80+ end-to-end bioinformatics projects completed across genomics, clinical research, and IT automation.
             </p>
-            <span className="text-[10px] uppercase font-bold tracking-widest text-accent relative">Strategic Professional Impact</span>
+            <span className="text-[10px] uppercase font-bold tracking-widest text-accent relative">Project Overview</span>
           </div>
         </div>
       </Section>

@@ -13,11 +13,11 @@ const Hero: React.FC = () => {
                     Faris Izzatur Rahman
                 </div>
                 <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight text-foreground mb-6">
-                    Architecting solutions for <span className="text-accent underline decoration-accent/20 decoration-4 underline-offset-8">complex biological data</span>.
+                    Developing computational solutions for <span className="text-accent underline decoration-accent/20 decoration-4 underline-offset-8">biological data</span>.
                 </h1>
 
                 <p className="text-lg md:text-xl lg:text-2xl text-muted leading-relaxed max-w-2xl mb-10 font-normal">
-                    Bridging the gap between computer science and genomic science with rigor, precision, and mature problem-solving.
+                    Bridging computer science and genomics through data analysis, workflow automation, and practical problem-solving.
                 </p>
 
                 <div className="flex flex-wrap gap-4">

@@ -62,9 +62,9 @@ export const experiencesData: Experience[] = [
     period: "August 2026 – Present",
     isCurrent: true,
     description: [
-      "Architecting and optimizing high-throughput operational workflows for population-scale human genome sequencing (WGS), driving data processing reliability and throughput.",
-      "Spearheading the technical design and deployment of a national-level Mycobacterium tuberculosis (Mtb) genomic surveillance platform, translating complex public health requirements into production-ready software.",
-      "Democratizing access to advanced genomic analytics by scaling cloud-native bioinformatics pipelines and infrastructure for public health initiative usage."
+      "Assigned to support operational workflows for standard human whole genome sequencing (WGS), focusing on data processing efficiency and reliability.",
+      "Assigned to contribute to the development of a Mycobacterium tuberculosis (Mtb) genomic surveillance platform by translating public health needs into technical specifications.",
+      "Assigned to assist in optimizing bioinformatics services and workflows for public utilization."
     ]
   },
   {
@@ -73,10 +73,10 @@ export const experiencesData: Experience[] = [
     location: "Jakarta, Indonesia",
     period: "October 2024 – July 2026",
     description: [
-      "Directing bioinformatics analysis schedules for high-throughput clinical and research workflows, ensuring timely delivery and operational excellence.",
-      "Architecting personalized bioinformatics solutions by translating complex client research goals into actionable computational strategies.",
-      "Bridging the gap between technical execution and client outcomes through integrated project oversight and hands-on deep-dive analysis.",
-      "Completed over 80 diverse bioinformatics projects spanning genome assembly, AMR detection, and multi-omic metagenomics."
+      "Coordinated a small 2-person bioinformatics team to direct analysis schedules for high-throughput clinical and research workflows, ensuring timely delivery.",
+      "Explored and implemented novel bioinformatics analysis pipelines to address custom client research requirements and expand analytical capabilities.",
+      "Bridged the gap between technical execution and client outcomes through integrated project oversight and hands-on deep-dive analysis.",
+      "Successfully completed over 80 diverse bioinformatics projects spanning genome assembly, AMR profiling, SARS-CoV-2 variant tracking, 16S/ITS/COI metagenomics, plant genomics, human methylation, and transcriptomics."
     ]
   },
   {
@@ -85,7 +85,7 @@ export const experiencesData: Experience[] = [
     location: "Jakarta, Indonesia",
     period: "May 2023 – October 2024",
     description: [
-      "Spearheaded the analysis of WGS, SARS-CoV-2, and NIPT data, driving critical clinical product outcomes through precise genomic interpretation.",
+      "Analyzed and interpreted SARS-CoV-2 whole genome sequencing (WGS), NIPT, and clinical genomic data to support product delivery.",
       "Streamlined operational efficiency by developing automated Python-based workflows for recurring bioinformatics processes.",
       "Integrated Machine Learning and Deep Learning frameworks to solve predictive challenges in internal operations and client services.",
       "Facilitated technical growth by training over 75 professionals through 24+ specialized bioinformatics workshops."
@@ -99,7 +99,7 @@ export const publicProjectsData: Project[] = [
     context: "Metagenomic profiling using long-read Oxford Nanopore sequencing data.",
     challenge: "Accurately estimating abundance and diversity from high-error-rate long reads while maintaining visualization clarity.",
     approach: "Developed a comprehensive pipeline for alpha/beta diversity and taxonomic profiling with advanced metagenomic visualizations.",
-    keyTakeaway: "Successfully characterized complex microbial communities with high resolution using Nanopore technology.",
+    keyTakeaway: "Analyzed microbial community composition and diversity from Nanopore long-read sequencing data.",
     badges: ["16S rRNA", "Nanopore", "Diversity Analysis", "Visualization"],
     link: "https://bit.ly/16s-ont-bioinformatics-analysis"
   },
@@ -115,7 +115,7 @@ export const publicProjectsData: Project[] = [
   {
     title: "IMPUTE2 Wrapper & SNP Analytics",
     context: "Python-based automation for human genome imputation workflows.",
-    challenge: "Wrapping complex IMPUTE2 outputs to facilitate efficient SNP calculation and downstream analysis.",
+    challenge: "Parsing IMPUTE2 outputs to automate SNP calculation and facilitate downstream analysis.",
     approach: "Developed a Python tool to parse and aggregate imputation results into standard analysis formats.",
     keyTakeaway: "Drastically reduced the time required to post-process large-scale imputation datasets.",
     badges: ["Python", "Human Genetics", "Automation", "SNP Analytics"],
@@ -128,7 +128,7 @@ export const domainProjectsData: Project[] = [
     title: "Microbial & Metagenomic Profiling",
     context: "Scaling metagenomic analysis for AMR detection and complex ecosystems (16S, 18S, ITS, COI).",
     challenge: "Managing high-throughput shotgun sequencing data for pathogenic bacteria profiling across diverse environmental samples.",
-    approach: "Standardized a robust metagenomics suite including SARS-CoV-2 variant identification and bacterial pan-genome analysis.",
+    approach: "Built and maintained metagenomics workflows for variant identification and bacterial pan-genome analysis.",
     keyTakeaway: "Delivered actionable insights for both research initiatives and high-stakes clinical applications.",
     badges: ["Metagenomics", "AMR", "Viral ID", "Clinical"]
   },
@@ -136,7 +136,7 @@ export const domainProjectsData: Project[] = [
     title: "Agricultural & Plant Genomics",
     context: "Analyzing complex plant genomes to support agricultural biotechnology.",
     challenge: "Handling large-scale plant genomic datasets with significant repetitive elements and structural variation.",
-    approach: "Applied advanced assembly algorithms and comparative genomic frameworks to identify key traits.",
+    approach: "Applied genome assembly tools and comparative genomics to analyze plant genomic datasets.",
     keyTakeaway: "Successfully integrated bacterial pan-genome insights with plant host data for systemic understanding.",
     badges: ["Plant Science", "Genome Assembly", "Pan-genome"]
   },
@@ -144,7 +144,7 @@ export const domainProjectsData: Project[] = [
     title: "Human Methylation & Epigenomics",
     context: "Precision medicine applications focusing on clinical biomarkers.",
     challenge: "Decoding high-dimensional methylation array data into significant biological patterns.",
-    approach: "Developed custom normalization and analysis pipelines to ensure statistical rigor in biomarker discovery.",
+    approach: "Implemented normalization and analysis pipelines for methylation array data analysis.",
     keyTakeaway: "Provided foundational data for diagnostic product development in the clinical genomic space.",
     badges: ["Epigenomics", "Methylation", "Machine Learning"]
   }
@@ -155,21 +155,21 @@ export const publicationsData: Publication[] = [
     title: "Optimisation of peptides targeting reverse transcriptase HIV-1 using QSAR, machine learning, and computational approaches",
     journal: "Frontiers in Pharmacology",
     year: 2025,
-    reflection: "Synthesized structural biology with ML to navigate high-dimensional peptide space, effectively narrowing the candidate pool for future therapeutic validation.",
+    reflection: "Applied computational methods and ML to analyze HIV-1 reverse transcriptase peptides and narrow down candidate sequences.",
     link: "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2025.1707377/full"
   },
   {
     title: "Revealing Pogostemon cablin (Blanco) Benth. and Murraya koenigii (L.) Spreng. action targets on AKT1 as papillary thyroid cancer therapy based on bioinformatics approach",
     journal: "Journal of Pharmacy & Pharmacognosy Research",
     year: 2025,
-    reflection: "Bridged the gap between traditional pharmacognosy and systems biology, identifying AKT1 as a key molecular vulnerability for targeted herbal therapeutics.",
+    reflection: "Utilized a network pharmacology and bioinformatics workflow to evaluate herbal compounds targeting AKT1 in papillary thyroid cancer.",
     link: "https://jppres.com/jppres/pdf/vol13/jppres24.2163_13.s1.100.pdf"
   },
   {
     title: "Targeting phosphoglycerate dehydrogenase enzyme using ginger compounds to suppress thyroid cancer progression",
     journal: "Narra X",
     year: 2024,
-    reflection: "Developed a robust virtual screening framework to evaluate ginger-derived lead compounds, providing a computational foundation for suppressive metabolic cancer therapy.",
+    reflection: "Conducted virtual screening to analyze ginger-derived compounds against phosphoglycerate dehydrogenase in thyroid cancer.",
     link: "https://narrax.org/main/article/view/112"
   }
 ];
@@ -193,8 +193,8 @@ export const certificateGroupsData: CertificateGroupData[] = [
   {
     domain: "Cloud & Machine Learning",
     certificates: [
-      { name: "AWS Academy ML Foundation", issuer: "Amazon Web Services", impact: "Mastered SageMaker, Computer Vision, and NLP on cloud-native infrastructure." },
-      { name: "AWS Solutions Architect", issuer: "Amazon", impact: "Designing scalable, secure cloud architectures for bioinformatics workloads." }
+      { name: "AWS Academy ML Foundation", issuer: "Amazon Web Services", impact: "Gained practical experience with SageMaker, Computer Vision, and NLP on AWS cloud infrastructure." },
+      { name: "AWS Solutions Architect", issuer: "Amazon", impact: "Learned core cloud architecture principles for hosting and running bioinformatics workloads." }
     ]
   },
   {
