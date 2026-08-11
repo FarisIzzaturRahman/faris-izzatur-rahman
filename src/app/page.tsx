@@ -17,7 +17,8 @@ import {
   summerSchoolsData,
   certificateGroupsData,
   continuousCoursesData,
-  readingsData
+  readingsData,
+  speakingEngagementsData
 } from "@/data/portfolioData";
 
 export default function Home() {
@@ -100,14 +101,14 @@ export default function Home() {
       </Section>
 
       <Section id="teaching" className="bg-muted/5">
-        <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-8">Teaching & Facilitation</h2>
+        <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-8">Teaching, Speaking & Mentoring</h2>
         <div className="flex flex-col md:flex-row gap-12 items-start">
           <div className="flex-1 space-y-4">
-            <h3 className="text-2xl font-semibold tracking-tight">Technical Training Facilitator</h3>
+            <h3 className="text-2xl font-semibold tracking-tight">Technical Speaker & Facilitator</h3>
             <p className="text-foreground/80 leading-relaxed">
-              I act as a bridge between technology and research by conducting technical workshops and training sessions. My focus is on empowering scientists with the computational tools they need to unlock biological insights.
+              I act as a bridge between technology and research by conducting technical workshops, guest lectures, and training sessions. My focus is on empowering scientists with the computational tools they need to unlock biological insights.
             </p>
-            <div className="grid grid-cols-2 gap-4 py-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 py-4">
               <div className="p-4 bg-background border border-border">
                 <div className="text-2xl font-bold text-accent">75+</div>
                 <div className="text-xs uppercase tracking-wider text-muted font-semibold">Professionals Trained</div>
@@ -116,8 +117,13 @@ export default function Home() {
                 <div className="text-2xl font-bold text-accent">24+</div>
                 <div className="text-xs uppercase tracking-wider text-muted font-semibold">Training Sessions</div>
               </div>
+              <div className="p-4 bg-background border border-border">
+                <div className="text-2xl font-bold text-accent">8+</div>
+                <div className="text-xs uppercase tracking-wider text-muted font-semibold">Mentees Guided</div>
+              </div>
             </div>
             <ul className="space-y-2 text-sm text-muted list-disc list-inside">
+              <li>Mentored 8+ students and researchers across undergraduate theses, tailored bioinformatics guidance programs, and annual mentoring initiatives</li>
               <li>Intro to Unix for Genomics & Post-NGS workflows</li>
               <li>Workflow Orchestration & Reproducibility (Nextflow/Python)</li>
               <li>Machine Learning application in Clinical Genomics</li>
@@ -130,6 +136,21 @@ export default function Home() {
                 <ReadingItem key={index} title={item.title} author={item.author} type={item.type} />
               ))}
             </div>
+          </div>
+        </div>
+
+        <div className="mt-16 pt-12 border-t border-border/50">
+          <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-6">Selected Speaking Engagements</h4>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {speakingEngagementsData.map((talk, idx) => (
+              <div key={idx} className="p-6 border border-border bg-background/50 flex flex-col justify-between gap-4 relative group hover:border-accent/40 transition-colors">
+                <div className="absolute top-0 right-0 p-3 text-[10px] font-mono text-muted/40 uppercase">{talk.year}</div>
+                <div>
+                  <div className="text-xs font-medium text-accent uppercase tracking-wider mb-2">{talk.organizer}</div>
+                  <h5 className="text-sm font-semibold text-foreground leading-snug">{talk.title}</h5>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </Section>

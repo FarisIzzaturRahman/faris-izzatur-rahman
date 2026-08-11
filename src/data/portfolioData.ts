@@ -54,6 +54,12 @@ export interface Reading {
   type: 'Paper' | 'Book' | 'Newsletter';
 }
 
+export interface SpeakingEngagement {
+  title: string;
+  organizer: string;
+  year: string;
+}
+
 export const experiencesData: Experience[] = [
   {
     role: "Bioinformatician",
@@ -220,4 +226,32 @@ export const readingsData: Reading[] = [
   { title: "Reproducible Bioinformatics", author: "Nature Reviews", type: "Paper" },
   { title: "Nextflow in Production", author: "Seqera Docs", type: "Newsletter" },
   { title: "Algorithms in Bioinformatics", author: "Dan Gusfield", type: "Book" }
+];
+
+export const speakingEngagementsData: SpeakingEngagement[] = [
+  {
+    title: "Workshop Bash For Biological Data Analysis",
+    organizer: "OmicsLite",
+    year: "2026"
+  },
+  {
+    title: "Technical Workshop Pelatihan Pemrograman Bioinformatika",
+    organizer: "BGSi",
+    year: "2025"
+  },
+  {
+    title: "Talk Show From Lab to Launch",
+    organizer: "Synbio Indonesia",
+    year: "2024"
+  },
+  {
+    title: "Hands-On Session: Beginner's Guide to Machine Learning for Cases Prediction",
+    organizer: "GSI Lab",
+    year: "2023"
+  },
+  {
+    title: "Introduction to Nextflow for Bioinformatics Automation",
+    organizer: "BRC INBIO",
+    year: "2023"
+  }
 ];
