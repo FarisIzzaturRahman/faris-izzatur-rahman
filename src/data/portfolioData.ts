@@ -56,16 +56,27 @@ export interface Reading {
 
 export const experiencesData: Experience[] = [
   {
+    role: "Bioinformatician",
+    company: "Biomedical and Genome Science Initiative (BGSi)",
+    location: "Jakarta, Indonesia",
+    period: "August 2026 – Present",
+    isCurrent: true,
+    description: [
+      "Architecting and optimizing high-throughput operational workflows for population-scale human genome sequencing (WGS), driving data processing reliability and throughput.",
+      "Spearheading the technical design and deployment of a national-level Mycobacterium tuberculosis (Mtb) genomic surveillance platform, translating complex public health requirements into production-ready software.",
+      "Democratizing access to advanced genomic analytics by scaling cloud-native bioinformatics pipelines and infrastructure for public health initiative usage."
+    ]
+  },
+  {
     role: "Bioinformatics Coordinator",
     company: "PT. Genomik Solidaritas Indonesia",
     location: "Jakarta, Indonesia",
-    period: "October 2024 – Present",
-    isCurrent: true,
+    period: "October 2024 – July 2026",
     description: [
       "Directing bioinformatics analysis schedules for high-throughput clinical and research workflows, ensuring timely delivery and operational excellence.",
       "Architecting personalized bioinformatics solutions by translating complex client research goals into actionable computational strategies.",
       "Bridging the gap between technical execution and client outcomes through integrated project oversight and hands-on deep-dive analysis.",
-      "Completed over 65 diverse bioinformatics projects spanning genome assembly, AMR detection, and multi-omic metagenomics."
+      "Completed over 80 diverse bioinformatics projects spanning genome assembly, AMR detection, and multi-omic metagenomics."
     ]
   },
   {
@@ -77,7 +88,7 @@ export const experiencesData: Experience[] = [
       "Spearheaded the analysis of WGS, SARS-CoV-2, and NIPT data, driving critical clinical product outcomes through precise genomic interpretation.",
       "Streamlined operational efficiency by developing automated Python-based workflows for recurring bioinformatics processes.",
       "Integrated Machine Learning and Deep Learning frameworks to solve predictive challenges in internal operations and client services.",
-      "Facilitated technical growth by training over 75 professionals through 20+ specialized bioinformatics workshops."
+      "Facilitated technical growth by training over 75 professionals through 24+ specialized bioinformatics workshops."
     ]
   }
 ];

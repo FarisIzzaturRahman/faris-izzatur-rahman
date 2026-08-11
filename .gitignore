@@ -45,4 +45,8 @@ next-env.d.ts
 .skills/
 skills-lock.json
 
+# pdf files
+*.pdf
+
+
 

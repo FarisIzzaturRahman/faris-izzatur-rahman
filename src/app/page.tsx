@@ -75,7 +75,7 @@ export default function Home() {
       </Section>
 
       <Section id="projects">
-        <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-12 text-center">Domain-Specific Expertise (65+ Projects)</h2>
+        <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-12 text-center">Domain-Specific Expertise (80+ Projects)</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {domainProjectsData.map((project, index) => (
             <ProjectCard
@@ -92,7 +92,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-accent/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
             <Microscope className="text-accent/40 mb-4 group-hover:scale-110 transition-transform duration-500" size={32} />
             <p className="text-sm text-muted mb-4 italic relative">
-              65+ end-to-end bioinformatics projects completed across genomics, clinical research, and IT automation.
+              80+ end-to-end bioinformatics projects completed across genomics, clinical research, and IT automation.
             </p>
             <span className="text-[10px] uppercase font-bold tracking-widest text-accent relative">Strategic Professional Impact</span>
           </div>
@@ -113,7 +113,7 @@ export default function Home() {
                 <div className="text-xs uppercase tracking-wider text-muted font-semibold">Professionals Trained</div>
               </div>
               <div className="p-4 bg-background border border-border">
-                <div className="text-2xl font-bold text-accent">20+</div>
+                <div className="text-2xl font-bold text-accent">24+</div>
                 <div className="text-xs uppercase tracking-wider text-muted font-semibold">Training Sessions</div>
               </div>
             </div>
