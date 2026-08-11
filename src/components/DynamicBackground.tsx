@@ -1,16 +1,11 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, useScroll, useTransform, useReducedMotion, useSpring } from 'framer-motion';
 
 const DynamicBackground: React.FC = () => {
-    const containerRef = useRef<HTMLDivElement>(null);
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-    const { scrollYProgress } = useScroll({
-        target: containerRef,
-        offset: ["start start", "end end"]
-    });
+    const { scrollYProgress } = useScroll();
 
     const shouldReduceMotion = useReducedMotion();
 
@@ -42,7 +37,6 @@ const DynamicBackground: React.FC = () => {
 
     return (
         <div
-            ref={containerRef}
             className="fixed inset-0 -z-10 overflow-hidden pointer-events-none select-none"
             aria-hidden="true"
         >

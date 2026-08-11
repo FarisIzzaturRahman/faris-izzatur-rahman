@@ -3,24 +3,43 @@
 import React, { useEffect, useState } from 'react';
 import { Sun, Moon, Laptop } from 'lucide-react';
 
+type Theme = 'light' | 'dark' | 'system';
+
 const ThemeToggle: React.FC = () => {
-    const [theme, setTheme] = useState<'light' | 'dark' | 'system'>('system');
+    const [theme, setTheme] = useState<Theme>('system');
+    const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
-        const root = window.document.documentElement;
-        if (theme === 'dark') {
-            root.classList.add('dark');
-        } else if (theme === 'light') {
-            root.classList.remove('dark');
-        } else {
-            const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-            if (systemTheme === 'dark') {
-                root.classList.add('dark');
-            } else {
-                root.classList.remove('dark');
-            }
+        const savedTheme = localStorage.getItem('theme') as Theme | null;
+        if (savedTheme && ['light', 'dark', 'system'].includes(savedTheme)) {
+            setTheme(savedTheme);
         }
-    }, [theme]);
+        setMounted(true);
+    }, []);
+
+    useEffect(() => {
+        if (!mounted) return;
+
+        const root = window.document.documentElement;
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+        const applyTheme = (t: Theme) => {
+            const isDark = t === 'dark' || (t === 'system' && mediaQuery.matches);
+            root.classList.toggle('dark', isDark);
+        };
+
+        applyTheme(theme);
+        localStorage.setItem('theme', theme);
+
+        const handleSystemThemeChange = () => {
+            if (theme === 'system') {
+                applyTheme('system');
+            }
+        };
+
+        mediaQuery.addEventListener('change', handleSystemThemeChange);
+        return () => mediaQuery.removeEventListener('change', handleSystemThemeChange);
+    }, [theme, mounted]);
 
     return (
         <div className="fixed top-6 right-6 z-50 flex items-center gap-1 p-1 bg-background/50 backdrop-blur-md border border-border rounded-full shadow-sm">

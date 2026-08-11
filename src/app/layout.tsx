@@ -10,7 +10,18 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Faris Izzatur Rahman | Bioinformatics Portfolio",
-  description: "Senior Bioinformatician with 3+ years experience and an IT background. Specializing in clinical genomics, workflow automation, and technical training.",
+  description: "Bioinformatician with 3+ years experience and an IT background. Specializing in clinical genomics, workflow automation, and technical training.",
+  openGraph: {
+    title: "Faris Izzatur Rahman | Bioinformatics Portfolio",
+    description: "Architecting solutions for complex biological data. Bioinformatician specializing in clinical genomics, workflow automation, and technical training.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Faris Izzatur Rahman | Bioinformatics Portfolio",
+    description: "Architecting solutions for complex biological data. Bioinformatician specializing in clinical genomics, workflow automation, and technical training.",
+  },
 };
 
 export default function RootLayout({
